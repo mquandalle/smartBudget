@@ -1,0 +1,1 @@
+# tests/jasmine/client/unit/loginTemplate.coffee
