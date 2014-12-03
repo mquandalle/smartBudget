@@ -9,10 +9,10 @@ coffeescript
 iron:router
 jquery
 meteorhacks:fast-render
-mizzao:bootstrap-3
-sacha:spin
 stylus
-waitingkuo:jade
 meteorhacks:kadira
 sanjo:jasmine
+waitingkuo:jade
+mizzao:bootstrap-3
 velocity:html-reporter
+

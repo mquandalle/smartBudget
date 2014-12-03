@@ -1,13 +1,27 @@
-// client/templates/login/login.jade
-
 template(name="login")
-  #fullscreen_bg
-    .container.vertical-middle
-      form#login
-        .row
-          h1.white.text-center.font-5 smartBudget
-          .col-xs-10.col-sm-6.col-md-4.col-xs-offset-1.col-sm-offset-3.col-md-offset-4
-            input#email.font-1-5.form-control(type="email", placeholder="Email address")
-            input#password.font-1-5.form-control(type="password", placeholder="Password")
-            input.font-1-5.btn.btn-primary.btn-block(type="submit", value="Sign In")
-            p.white.font-2: em #{errorMessage}
+  .vertical-middle
+    .container
+      .row
+        .col-xs-12
+          h1.text-center smartBudget
+          .panel.padding-1.col-sm-10.col-md-8.col-lg-6.col-sm-offset-1.col-md-offset-2.col-lg-offset-3
+            .form-horizontal
+              h3 Login
+
+              #email-group.form-group
+                label.col-sm-2.control-label(for="email") Email
+                .col-sm-10
+                  input#email.form-control(type="email", placeholder="Email")
+
+              #password-group.form-group
+                label.col-sm-2.control-label(for="password") Password
+                .col-sm-10
+                  input#password.form-control(type="password", placeholder="Password")
+
+              .form-group
+                .col-xs-6
+                  button#register.btn.btn-primary.btn-block Register
+                .col-xs-6
+                  button#login.btn.btn-success.btn-block Login
+
+              h5.text-center.text-danger #{errorMessage}

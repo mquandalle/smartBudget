@@ -1,0 +1,44 @@
+// client/templates/register/register.jade
+
+template(name="register")
+  .vertical-middle
+    .container
+      .row
+        .col-xs-12
+          h1.text-center smartBudget
+          .panel.padding-1.col-sm-10.col-md-8.col-lg-6.col-sm-offset-1.col-md-offset-2.col-lg-offset-3
+            .form-horizontal
+              h3 Register
+
+              #email-group.form-group
+                label.col-sm-2.control-label(for="email") Email
+                .col-sm-10
+                  input#email.form-control(type="email", placeholder="Email")
+
+              #password-group.form-group
+                label.col-sm-2.control-label(for="password") Password
+                .col-sm-10
+                  input#password.form-control(type="password", placeholder="Password")
+
+              #confirm-password-group.form-group
+                label.col-sm-2.control-label(for="confirm-password") Password
+                .col-sm-10
+                  input#confirm-password.form-control(type="password", placeholder="Confirm Password")
+
+              #first-name-group.form-group
+                label.col-sm-2.control-label(for="first-name") First Name
+                .col-sm-10
+                  input#first-name.form-control(type="text", placeholder="First Name")
+
+              #last-name-group.form-group
+                label.col-sm-2.control-label(for="last-name") Last Name
+                .col-sm-10
+                  input#last-name.form-control(type="text", placeholder="Last Name")
+
+              .form-group
+                .col-xs-6
+                  button#cancel.btn.btn-danger.btn-block Cancel
+                .col-xs-6
+                  button#register.btn.btn-success.btn-block Register
+
+              h5.text-center.text-danger #{errorMessage}
